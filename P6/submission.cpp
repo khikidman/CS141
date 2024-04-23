@@ -68,8 +68,17 @@ class Graph {
 	public:
 		//add the node with neighborId as the neighbor of nodeId
 		void addNeighbor(int nodeId, int neighborId) {
-			this->vertices.at(nodeId)->setNeighbor(vertices.at(neighborId));
-			this->vertices.at(neighborId)->setNeighbor(vertices.at(nodeId));
+			bool edgeExists = false;
+			for (Node* node : this->vertices.at(nodeId)->getNeighbors()) {
+				if (node->getId() == neighborId) {
+					edgeExists = true;
+					break;
+				}
+			}
+			if (!edgeExists) {
+				this->vertices.at(nodeId)->setNeighbor(vertices.at(neighborId));
+				this->vertices.at(neighborId)->setNeighbor(vertices.at(nodeId));
+			}
 		};
 
 		//reads the edge list from file and creates the adjacency list data structure
@@ -77,19 +86,31 @@ class Graph {
 			ifstream myInStream;
 			myInStream.open(edgeListFileName);
 
-			bool found = true;
-
 			int i;
 			int j;
-			myInStream >> i >> j;
 
-			while (i && j) {
-				bool found = false;
-				for (int v = 0; v < vertices.size(); ++v) {
-					if (i = vertices.at(v)->getId() && vertices.at(v).) {
-						
-					}
+			while (myInStream >> i >> j) {
+				Node* nodeI = nullptr;
+				Node* nodeJ = nullptr;
+
+				// Check if nodes already exist, if not create them
+				for (Node* node : vertices) {
+					if (node->getId() == i) nodeI = node;
+					if (node->getId() == j) nodeJ = node;
 				}
+
+				if (nodeI == nullptr) {
+					nodeI = new Node();
+					nodeI->setId(i);
+					vertices.push_back(nodeI);
+				}
+				if (nodeJ == nullptr) {
+					nodeJ = new Node();
+					nodeJ->setId(j);
+					vertices.push_back(nodeJ);
+				}
+
+				addNeighbor(nodeI->getId(), nodeJ->getId());
 			}
 		};
 		
@@ -150,6 +171,10 @@ class Graph {
 
 
 void run(string edgeListFileName, string adjListFileName) {
+	Graph* graph;
+	graph->loadGraph(edgeListFileName);
+	graph->dumpGraph(adjListFileName);
+	graph->printGraphInfo();
 }
 
 //*****************************************************************************
