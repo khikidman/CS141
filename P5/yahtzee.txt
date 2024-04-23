@@ -1,0 +1,615 @@
+khikidman@khis-mbp P5 % ./a.out        
+1.  Ones:              0
+2.  Twos:              0
+3.  Threes:            0
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               0
+    Bonus:             0
+7.  Three of a kind:   0
+8.  Four of a kind:    0
+9.  Full house:        0
+10. Small straight:    0
+11. Large straight:    0
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             0
+Hand: 3 2 1 5 4 
+Keep Dice (s to stop rolling): s 
+Hand: 3 2 1 5 4 
+Select a combination to play: 10
+1.  Ones:              0
+2.  Twos:              0
+3.  Threes:            0
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               0
+    Bonus:             0
+7.  Three of a kind:   0
+8.  Four of a kind:    0
+9.  Full house:        0
+10. Small straight:    30
+11. Large straight:    0
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             30
+Hand: 6 4 3 1 5 
+Keep Dice (s to stop rolling): 1
+Hand: 6 3 4 5 2 
+Keep Dice (s to stop rolling): s
+Hand: 6 3 4 5 2 
+Select a combination to play: 11
+1.  Ones:              0
+2.  Twos:              0
+3.  Threes:            0
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               0
+    Bonus:             0
+7.  Three of a kind:   0
+8.  Four of a kind:    0
+9.  Full house:        0
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             70
+Hand: 2 5 1 4 3 
+Keep Dice (s to stop rolling): 1
+Hand: 2 5 3 2 3 
+Keep Dice (s to stop rolling): 1345
+Hand: 2 1 3 2 3 
+Select a combination to play: 2
+1.  Ones:              0
+2.  Twos:              4
+3.  Threes:            0
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               4
+    Bonus:             0
+7.  Three of a kind:   0
+8.  Four of a kind:    0
+9.  Full house:        0
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             74
+Hand: 4 3 2 2 4 
+Keep Dice (s to stop rolling): 1345
+Hand: 4 2 2 2 4 
+Keep Dice (s to stop rolling): s
+Hand: 4 2 2 2 4 
+Select a combination to play: 9
+1.  Ones:              0
+2.  Twos:              4
+3.  Threes:            0
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               4
+    Bonus:             0
+7.  Three of a kind:   0
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             99
+Hand: 4 4 4 1 3 
+Keep Dice (s to stop rolling): 123
+Hand: 4 4 4 3 3 
+Keep Dice (s to stop rolling): 123
+Hand: 4 4 4 5 3 
+Select a combination to play: 4
+1.  Ones:              0
+2.  Twos:              4
+3.  Threes:            0
+4.  Fours:             12
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               16
+    Bonus:             0
+7.  Three of a kind:   0
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             111
+Hand: 6 5 6 6 5 
+Keep Dice (s to stop rolling): 134
+Hand: 6 2 6 6 5 
+Keep Dice (s to stop rolling): 134
+Hand: 6 2 6 6 5 
+Select a combination to play: 6
+1.  Ones:              0
+2.  Twos:              4
+3.  Threes:            0
+4.  Fours:             12
+5.  Fives:             0
+6.  Sixes:             18
+    Sum:               34
+    Bonus:             0
+7.  Three of a kind:   0
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             129
+Hand: 4 1 2 2 2 
+Keep Dice (s to stop rolling): 345
+Hand: 6 1 2 2 2 
+Keep Dice (s to stop rolling): 345
+Hand: 5 1 2 2 2 
+Select a combination to play: 7
+1.  Ones:              0
+2.  Twos:              4
+3.  Threes:            0
+4.  Fours:             12
+5.  Fives:             0
+6.  Sixes:             18
+    Sum:               34
+    Bonus:             0
+7.  Three of a kind:   12
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             141
+Hand: 3 5 1 3 2 
+Keep Dice (s to stop rolling): 14
+Hand: 3 4 3 3 6 
+Keep Dice (s to stop rolling): 134
+Hand: 3 5 3 3 3 
+Select a combination to play: 3   
+1.  Ones:              0
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             12
+5.  Fives:             0
+6.  Sixes:             18
+    Sum:               46
+    Bonus:             0
+7.  Three of a kind:   12
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             153
+Hand: 6 3 4 6 3 
+Keep Dice (s to stop rolling): 14
+Hand: 6 3 3 6 1 
+Keep Dice (s to stop rolling): 14
+Hand: 6 4 6 6 2 
+Select a combination to play: 12
+1.  Ones:              0
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             12
+5.  Fives:             0
+6.  Sixes:             18
+    Sum:               46
+    Bonus:             0
+7.  Three of a kind:   12
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            24
+13. Yahtzee:           0
+    Total:             177
+Hand: 1 3 2 6 6 
+Keep Dice (s to stop rolling): 1 
+Hand: 1 4 6 3 1 
+Keep Dice (s to stop rolling): 15
+Hand: 1 6 3 5 1 
+Select a combination to play: 1
+1.  Ones:              2
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             12
+5.  Fives:             0
+6.  Sixes:             18
+    Sum:               48
+    Bonus:             0
+7.  Three of a kind:   12
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            24
+13. Yahtzee:           0
+    Total:             179
+Hand: 4 5 1 2 2 
+Keep Dice (s to stop rolling): 2
+Hand: 2 5 4 6 3 
+Keep Dice (s to stop rolling): 2
+Hand: 6 5 1 6 4 
+Select a combination to play: 5
+1.  Ones:              2
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             12
+5.  Fives:             5
+6.  Sixes:             18
+    Sum:               53
+    Bonus:             0
+7.  Three of a kind:   12
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            24
+13. Yahtzee:           0
+    Total:             184
+Hand: 2 2 6 3 3 
+Keep Dice (s to stop rolling): 12
+Hand: 2 2 1 2 3 
+Keep Dice (s to stop rolling): 124
+Hand: 2 2 6 2 2 
+Select a combination to play: 8 
+1.  Ones:              2
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             12
+5.  Fives:             5
+6.  Sixes:             18
+    Sum:               53
+    Bonus:             0
+7.  Three of a kind:   12
+8.  Four of a kind:    14
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            24
+13. Yahtzee:           0
+    Total:             198
+Hand: 3 2 4 3 5 
+Keep Dice (s to stop rolling): 14
+Hand: 3 5 3 3 1 
+Keep Dice (s to stop rolling): 134
+Hand: 3 4 3 3 4 
+Select a combination to play: 13
+1.  Ones:              2
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             12
+5.  Fives:             5
+6.  Sixes:             18
+    Sum:               53
+    Bonus:             0
+7.  Three of a kind:   12
+8.  Four of a kind:    14
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            24
+13. Yahtzee:           0
+    Total:             198
+
+
+
+
+
+
+
+
+
+
+
+khikidman@khis-mbp P5 % ./a.out
+1.  Ones:              0
+2.  Twos:              0
+3.  Threes:            0
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               0
+    Bonus:             0
+7.  Three of a kind:   0
+8.  Four of a kind:    0
+9.  Full house:        0
+10. Small straight:    0
+11. Large straight:    0
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             0
+Hand: 5 3 3 4 1 
+Keep Dice (s to stop rolling): 23
+Hand: 2 3 3 4 3 
+Keep Dice (s to stop rolling): 235
+Hand: 3 3 3 4 3 
+Select a combination to play: 3
+1.  Ones:              0
+2.  Twos:              0
+3.  Threes:            12
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               12
+    Bonus:             0
+7.  Three of a kind:   0
+8.  Four of a kind:    0
+9.  Full house:        0
+10. Small straight:    0
+11. Large straight:    0
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             12
+Hand: 6 3 1 3 3 
+Keep Dice (s to stop rolling): 23
+Hand: 4 3 1 6 1 
+Keep Dice (s to stop rolling): 35
+Hand: 1 5 1 3 1 
+Select a combination to play: 1  
+1.  Ones:              3
+2.  Twos:              0
+3.  Threes:            12
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               15
+    Bonus:             0
+7.  Three of a kind:   0
+8.  Four of a kind:    0
+9.  Full house:        0
+10. Small straight:    0
+11. Large straight:    0
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             15
+Hand: 2 1 4 1 3 
+Keep Dice (s to stop rolling): 135
+Hand: 2 2 4 4 3 
+Keep Dice (s to stop rolling): 135
+Hand: 2 6 4 2 3 
+Select a combination to play: 2
+1.  Ones:              3
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               19
+    Bonus:             0
+7.  Three of a kind:   0
+8.  Four of a kind:    0
+9.  Full house:        0
+10. Small straight:    0
+11. Large straight:    0
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             19
+Hand: 2 6 6 2 1 
+Keep Dice (s to stop rolling): 23
+Hand: 6 6 6 2 4 
+Keep Dice (s to stop rolling): 123
+Hand: 6 6 6 1 2 
+Select a combination to play: 7
+1.  Ones:              3
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               19
+    Bonus:             0
+7.  Three of a kind:   21
+8.  Four of a kind:    0
+9.  Full house:        0
+10. Small straight:    0
+11. Large straight:    0
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             40
+Hand: 3 3 5 5 6 
+Keep Dice (s to stop rolling): 235
+Hand: 3 3 5 1 6 
+Keep Dice (s to stop rolling): 235
+Hand: 1 3 5 4 6 
+Select a combination to play: 10
+1.  Ones:              3
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               19
+    Bonus:             0
+7.  Three of a kind:   21
+8.  Four of a kind:    0
+9.  Full house:        0
+10. Small straight:    30
+11. Large straight:    0
+12. Chance:            0
+13. Yahtzee:           0
+    Total:             70
+Hand: 2 2 6 2 2 
+Keep Dice (s to stop rolling): 1245
+Hand: 2 2 2 2 2 
+Keep Dice (s to stop rolling): s
+Hand: 2 2 2 2 2 
+Select a combination to play: 13
+1.  Ones:              3
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               19
+    Bonus:             0
+7.  Three of a kind:   21
+8.  Four of a kind:    0
+9.  Full house:        0
+10. Small straight:    30
+11. Large straight:    0
+12. Chance:            0
+13. Yahtzee:           50
+    Total:             120
+Hand: 6 2 3 3 6 
+Keep Dice (s to stop rolling): 1345
+Hand: 6 3 3 3 6 
+Keep Dice (s to stop rolling): s
+Hand: 6 3 3 3 6 
+Select a combination to play: 9
+1.  Ones:              3
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             0
+    Sum:               19
+    Bonus:             0
+7.  Three of a kind:   21
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    0
+12. Chance:            0
+13. Yahtzee:           50
+    Total:             145
+Hand: 5 6 4 6 1 
+Keep Dice (s to stop rolling): 24
+Hand: 6 6 6 6 4 
+Keep Dice (s to stop rolling): 1234
+Hand: 6 6 6 6 5 
+Select a combination to play: 6   
+1.  Ones:              3
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             24
+    Sum:               43
+    Bonus:             0
+7.  Three of a kind:   21
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    0
+12. Chance:            0
+13. Yahtzee:           50
+    Total:             169
+Hand: 4 1 6 5 3 
+Keep Dice (s to stop rolling): 1345
+Hand: 4 3 6 5 3 
+Keep Dice (s to stop rolling): 1345
+Hand: 4 2 6 5 3 
+Select a combination to play: 11
+1.  Ones:              3
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             0
+5.  Fives:             0
+6.  Sixes:             24
+    Sum:               43
+    Bonus:             0
+7.  Three of a kind:   21
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            0
+13. Yahtzee:           50
+    Total:             209
+Hand: 5 6 4 6 1 
+Keep Dice (s to stop rolling): 124 
+Hand: 5 6 3 6 3 
+Keep Dice (s to stop rolling): 124
+Hand: 5 6 5 6 5 
+Select a combination to play: 5 
+1.  Ones:              3
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             0
+5.  Fives:             15
+6.  Sixes:             24
+    Sum:               58
+    Bonus:             0
+7.  Three of a kind:   21
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            0
+13. Yahtzee:           50
+    Total:             224
+Hand: 2 6 4 4 2 
+Keep Dice (s to stop rolling): 34    
+Hand: 6 2 4 4 6 
+Keep Dice (s to stop rolling): 34
+Hand: 3 1 4 4 6 
+Select a combination to play: 4
+1.  Ones:              3
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             8
+5.  Fives:             15
+6.  Sixes:             24
+    Sum:               66
+    Bonus:             35
+7.  Three of a kind:   21
+8.  Four of a kind:    0
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            0
+13. Yahtzee:           50
+    Total:             267
+Hand: 4 2 6 6 6 
+Keep Dice (s to stop rolling): 345
+Hand: 5 6 6 6 6 
+Keep Dice (s to stop rolling): s   
+Hand: 5 6 6 6 6 
+Select a combination to play: 8
+1.  Ones:              3
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             8
+5.  Fives:             15
+6.  Sixes:             24
+    Sum:               66
+    Bonus:             35
+7.  Three of a kind:   21
+8.  Four of a kind:    29
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            0
+13. Yahtzee:           50
+    Total:             296
+Hand: 4 2 2 3 2 
+Keep Dice (s to stop rolling): 1
+Hand: 4 2 2 3 3 
+Keep Dice (s to stop rolling): 145
+Hand: 4 3 5 3 3 
+Select a combination to play: 12
+1.  Ones:              3
+2.  Twos:              4
+3.  Threes:            12
+4.  Fours:             8
+5.  Fives:             15
+6.  Sixes:             24
+    Sum:               66
+    Bonus:             35
+7.  Three of a kind:   21
+8.  Four of a kind:    29
+9.  Full house:        25
+10. Small straight:    30
+11. Large straight:    40
+12. Chance:            18
+13. Yahtzee:           50
+    Total:             314
