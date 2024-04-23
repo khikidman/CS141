@@ -74,7 +74,23 @@ class Graph {
 
 		//reads the edge list from file and creates the adjacency list data structure
 		void loadGraph(string edgeListFileName) {
-			
+			ifstream myInStream;
+			myInStream.open(edgeListFileName);
+
+			bool found = true;
+
+			int i;
+			int j;
+			myInStream >> i >> j;
+
+			while (i && j) {
+				bool found = false;
+				for (int v = 0; v < vertices.size(); ++v) {
+					if (i = vertices.at(v)->getId() && vertices.at(v).) {
+						
+					}
+				}
+			}
 		};
 		
 		//writes the adjacency list into the file
