@@ -32,35 +32,16 @@ using namespace std;
 
 class Node {
 	private:
-		int value;
 		int id;
 		vector<Node*> neighbors;
 	public:
-		vector<Node*> getNeighbors() {
-			return this->neighbors;
-		}
+		vector<Node*> getNeighbors() { return this->neighbors; }
 
-		void setNeighbor(Node* neighbor) {
-			this->neighbors.push_back(neighbor);
-		}
+		void setNeighbor(Node* neighbor) { this->neighbors.push_back(neighbor); }
 
-		int getValue() {
-			return this->value;
-		}
+		int getId() { return this->id; }
 
-		void setValue(int value) {
-			this->value = value;
-		}
-
-		int getId() {
-			return this->id;
-		}
-
-		void setId(int id) {
-			this->id = id;
-		}
-
-
+		void setId(int id) { this->id = id; }
 };
 
 //************************** Graph ****************************
@@ -68,16 +49,19 @@ class Graph {
 	public:
 		//add the node with neighborId as the neighbor of nodeId
 		void addNeighbor(int nodeId, int neighborId) {
-			bool edgeExists = false;
-			for (Node* node : this->vertices.at(nodeId)->getNeighbors()) {
-				if (node->getId() == neighborId) {
-					edgeExists = true;
-					break;
+			
+			if (vertices.at(nodeId) != nullptr && vertices.at(neighborId) != nullptr) {
+				bool neighborExists = false;
+				for (int i = 0; i < vertices.size(); ++i) {
+					if (vertices.at(nodeId)->getNeighbors().at(i)->getId() == neighborId) {
+						neighborExists = true;
+						break;
+					}
 				}
-			}
-			if (!edgeExists) {
-				this->vertices.at(nodeId)->setNeighbor(vertices.at(neighborId));
-				this->vertices.at(neighborId)->setNeighbor(vertices.at(nodeId));
+				if (!neighborExists) {
+					vertices.at(nodeId)->setNeighbor(vertices.at(neighborId));
+					vertices.at(neighborId)->setNeighbor(vertices.at(nodeId));
+				}
 			}
 		};
 
@@ -90,28 +74,38 @@ class Graph {
 			int j;
 
 			while (myInStream >> i >> j) {
+
+				if (vertices.size() < max(i, j) - 1) {
+					vertices.resize(max(i, j) - 1);
+				}
+
 				Node* nodeI = nullptr;
 				Node* nodeJ = nullptr;
 
 				// Check if nodes already exist, if not create them
 				for (Node* node : vertices) {
-					if (node->getId() == i) nodeI = node;
-					if (node->getId() == j) nodeJ = node;
+					if (node->getId() == i - 1) nodeI = node;
+					if (node->getId() == j - 1) nodeJ = node;
 				}
 
 				if (nodeI == nullptr) {
-					nodeI = new Node();
-					nodeI->setId(i);
-					vertices.push_back(nodeI);
+					nodeI = new Node;
+					nodeI->setId(i - 1);
+					vertices.at(i - 1) = nodeI;
 				}
 				if (nodeJ == nullptr) {
-					nodeJ = new Node();
-					nodeJ->setId(j);
-					vertices.push_back(nodeJ);
+					nodeJ = new Node;
+					nodeJ->setId(j - 1);
+					vertices.at(j - 1) = nodeJ;
 				}
+
+				std::pair<Node*, Node*> newEdge (nodeI, nodeJ);
+
+				edges.push_back(newEdge);
 
 				addNeighbor(nodeI->getId(), nodeJ->getId());
 			}
+			myInStream.close();
 		};
 		
 		//writes the adjacency list into the file
@@ -120,11 +114,11 @@ class Graph {
 			myOutStream.open(adjListFileName);
 
 			for (int i = 0; i < vertices.size(); ++i) {
+				myOutStream << i << ": ";
 				for (int j = 0; j < vertices.at(i)->getNeighbors().size(); ++j) {
-					if (vertices.at(i)->getNeighbors().at(j)->getId() > i) {
-						myOutStream << vertices.at(i)->getId() << " " << vertices.at(i)->getNeighbors().at(j)->getId();
-					}
+					myOutStream << vertices.at(i)->getNeighbors().at(j)->getId() - 1 << " ";
 				}
+				myOutStream << endl;
 			}
 
 			myOutStream.close();
@@ -132,22 +126,36 @@ class Graph {
 
 		//Prints number of nodes, number of edges, and maximum degree on terminal
 		void printGraphInfo() {
-			cout << "Number of nodes: " << this->vertices.size() << endl;
+			// cout << "Number of nodes: " << this->vertices.size() << endl;
 			
-			int edges = 0;
+			// int edges = 0;
+			// int max_degree = 0;
+			// for (int i = 0; i < vertices.size(); ++i) {
+
+			// 	for (int j = 0; j < vertices.at(i)->getNeighbors().size(); ++j) {
+			// 		if (vertices.at(i)->getNeighbors().at(j)->getId() > i) {
+			// 			edges += 1;
+			// 		}
+			// 	}
+
+			// 	if (vertices.at(i)->getNeighbors().size() > max_degree) {
+			// 		max_degree = vertices.at(i)->getNeighbors().size();
+			// 	}
+
+			// }
+
+			// cout << "Number of edges: " << edges << endl;
+			// cout << "Maximum degree: " << max_degree << endl;
+
+			cout << "Number of nodes: " << this->vertices.size() << endl;
+
+			int edges = this->edges.size();
 			int max_degree = 0;
+			
 			for (int i = 0; i < vertices.size(); ++i) {
-
-				for (int j = 0; j < vertices.at(i)->getNeighbors().size(); ++i) {
-					if (vertices.at(i)->getNeighbors().at(j)->getId() > i) {
-						edges += 1;
-					}
-				}
-
 				if (vertices.at(i)->getNeighbors().size() > max_degree) {
 					max_degree = vertices.at(i)->getNeighbors().size();
 				}
-
 			}
 
 			cout << "Number of edges: " << edges << endl;
@@ -165,16 +173,17 @@ class Graph {
 		};
 
 	private:
+		vector<std::pair<Node*, Node*>> edges;
 		vector<Node*> vertices;
 		
 };
 
 
 void run(string edgeListFileName, string adjListFileName) {
-	Graph* graph;
+	Graph* graph = new Graph();
 	graph->loadGraph(edgeListFileName);
-	graph->dumpGraph(adjListFileName);
-	graph->printGraphInfo();
+	// graph->dumpGraph(adjListFileName);
+	// graph->printGraphInfo();
 }
 
 //*****************************************************************************
